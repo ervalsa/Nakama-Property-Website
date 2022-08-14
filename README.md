@@ -1,7 +1,7 @@
 ## NAKAMA Property Website
 
 ## Team (NAKAMA Team)
-- Afdha NEsta Alfito
+- Afdha Nesta Alfito
 - Cut Hilma Arifa
 - Ervalsa Dwi Nanda
 - Fazlul Alwan Ar Rifa'i
