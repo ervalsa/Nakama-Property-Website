@@ -22,11 +22,16 @@ body {
 }
 
 header {
+    background-color: var(--white);
+}
+
+.navbar {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
     align-items: center;
-    padding: 20px 10%;
-    background-color: var(--white);
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 li, a {
@@ -96,4 +101,15 @@ li, a {
 .nav-button:hover {
     color: var(--white);
     background-color: var(--dark-blue);
+}
+
+@media (min-width:550px) {
+
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
 }
