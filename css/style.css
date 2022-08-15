@@ -45,10 +45,11 @@ li, a {
 .nav-links {
     list-style: none;
     display: flex;
+    flex-flow: row;
 }
 
 .nav-links li {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .nav-links li a {
@@ -98,9 +99,13 @@ li, a {
     background-color: var(--dark-blue);
 }
 
+.nav-button.active:hover {
+    background-color: var(--blue);
+}
+
 .nav-button:hover {
     color: var(--white);
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
 }
 
 @media (min-width:550px) {
@@ -108,8 +113,16 @@ li, a {
 }
 
 @media (max-width: 850px) {
+    .nav-logo {
+        margin-bottom: 10px;
+    }
+
     .navbar {
-        display: flex;
+        position: relative;
         flex-direction: column;
+    }
+
+    .nav-buttons {
+        margin-top: 40px;
     }
 }
