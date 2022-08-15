@@ -1,18 +1,99 @@
 :root {
     --gray: #EAEAEA;
+    --dark-gray: #8B8BA5;
     --white: #FFFFFF;
     --dark-blue: #001D45;
     --blue: #0756C5;
     --green: #4BFF73;
+    --font-size: 1.1rem;
     --sans: Quicksand, sans-serif;
 }
 
-html {
+* {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-    padding: 0;
-    margin: 0;
     font-family: var(--sans);
+    font-size: var(--font-size);
+    background-color: var(--gray);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: var(--white);
+}
+
+li, a {
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 160px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
+.nav-links li a.active {
+    color: var(--dark-blue);
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 3px var(--dark-blue);
+}
+
+.nav-links li a:hover {
+    color: var(--dark-blue);
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 3px var(--dark-blue);
+}
+
+.nav-buttons {
+    list-style: none;
+    display: flex;
+}
+
+.nav-buttons li {
+    padding: 0 10px;
+}
+
+.nav-buttons a { 
+    font-weight: bold;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    color: var(--dark-blue);
+    background-color: var(--gray);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+}
+
+.nav-button.active {
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.nav-button:hover {
+    color: var(--white);
+    background-color: var(--dark-blue);
 }
