@@ -37,6 +37,20 @@
         padding-right: 0;
         margin-bottom: 1rem;
     }
+
+    .footer-wrapper {
+        top: 15rem;
+        flex-direction: column;
+    }
+
+    .footer-wrap-logo {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
