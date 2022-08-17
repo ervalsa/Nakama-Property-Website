@@ -2,62 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/icon-logo.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icon-logo.png" />
     <title>NAKAMA Property - Website</title>
-    
+
     <!-- Styling -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"> 
-    
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="./css/responsive.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"/>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
-        <div class="navbar">
-            <a href="#"><img class="nav-logo"  src="./assets/logo.png" alt="Nakama Property Logo"></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a class="active" href="#">Home</a></li>
-                    <li><a href="#">Why Us</a></li>
-                    <li><a href="#">Type</a></li>
-                    <li><a href="#">Properties</a></li>
+        <div class="container">
+            <div class="navbar navbar-fixed-top">
+                <a href="#"><img class="nav-logo" src="./assets/logo.png" alt="Logo"></a>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Why Us</a></li>
+                        <li><a href="#">Type</a></li>
+                        <li><a href="#">Properties</a></li>
+                    </ul>
+                </nav>
+                <ul class="nav-buttons">
+                    <li><a href="#" class="nav-button">About</a></li>
+                    <li><a href="#" class="nav-button active">Contact us</a></li>
                 </ul>
-            </nav>
-            <ul class="nav-buttons">
-                <li><a class="nav-button" href="#">About</a></li>
-                <li><a class="nav-button active" href="#">Contact Us</a></li>
-            </ul>
+            </div>
         </div>
     </header>
 
-    <!-- Main Section -->
     <main>
-
-        <!-- Section Banner -->
         <section id="banner">
-            <div class="flex-banner">
-                <div class="banner-dark-blue"></div>
-                <img class="banner-house" src="./assets/house-1.jpg" alt="Banner House">
+            <div class="banner-wrapper">
+                <div class="banner-left"></div>
+                <div class="banner-right"></div>
             </div>
-            <div class="banner-text">
-                <p class="banner-title">
-                    Discover Your<br>Dream House
-                </p>
-                <p class="banner-description">
-                    Buying a home is a life-changing experience, so shouldn't <br>your real state agent be a life changer.
-                </p>
-            </div> 
+            <div class="container">
+                <div class="banner-text-wrapper">
+                    <div class="banner-title">
+                        <h1>Discover Your<br>Dream House</h1>
+                    </div>
+                    <div class="banner-description">
+                        <p>
+                            Buying a home is a life-changing experience, so shouldn't your real estate agent be a life changer.
+                        </p>
+                    </div>
+                    <div class="banner-search-wrapper">
+                        <div class="search-item">
+                            <h3>Location</h3>
+                            <div class="input-search">Balikpapan</div>
+                        </div>
+                        <div class="search-item">
+                            <h3>Type</h3>
+                            <div class="input-search">Apartment</div>
+                        </div>
+                        <div class="search-item">
+                            <h3>Price Range</h3>
+                            <div class="input-search">Rp4.000.000</div>
+                        </div>
+                        <button type="button" class="btn-search-banner">Explore Now</button>
+                    </div>
+                </div>
+            </div>
         </section>
-
     </main>
-    
-    <!-- Footer -->
-    <footer>
-
-    </footer>
 </body>
 </html>
