@@ -1,11 +1,11 @@
 :root {
-    --gray: #EAEAEA;
-    --dark-gray: #8B8BA5;
-    --white: #FFFFFF;
-    --dark-blue: #001D45;
-    --blue: #0756C5;
-    --green: #4BFF73;
-    --font-size: 1.1rem;
+    --gray: #eaeaea;
+    --dark-gray: #8b8ba5;
+    --white: #fafafa;
+    --dark-blue: #001d45;
+    --blue: #0756c5;
+    --green: #4bff73;
+    --font-size: 1rem;
     --sans: Quicksand, sans-serif;
 }
 
@@ -15,41 +15,57 @@
     margin: 0;
 }
 
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
 body {
     font-family: var(--sans);
     font-size: var(--font-size);
     background-color: var(--gray);
+    position: relative;
 }
 
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
     background-color: var(--white);
+    z-index: 1;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
     align-items: center;
     padding: 20px 0;
     margin: 0 auto;
 }
 
-li, a {
-    text-decoration: none;
+.navbar-fixed-top {
+    width: 100%;
+    top: 0;
 }
 
 .nav-logo {
-    width: 160px;
+    width: 10rem;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
     flex-flow: row;
 }
 
 .nav-links li {
-    padding: 0 15px;
+    padding: 0 1rem;
 }
 
 .nav-links li a {
@@ -80,7 +96,7 @@ li, a {
     padding: 0 10px;
 }
 
-.nav-buttons a { 
+.nav-buttons a {
     font-weight: bold;
 }
 
@@ -108,21 +124,84 @@ li, a {
     background-color: var(--blue);
 }
 
-@media (min-width:550px) {
-
+.banner-wrapper {
+    width: 100%;
+    position: relative;
+    height: 600px;
+    top: 4rem;
+    display: flex;
+    background-color: var(--dark-blue);
 }
 
-@media (max-width: 850px) {
-    .nav-logo {
-        margin-bottom: 10px;
-    }
+.banner-left,
+.banner-right {
+    width: 100%;
+    position: relative;
+    min-width: 50%;
+}
 
-    .navbar {
-        position: relative;
-        flex-direction: column;
-    }
+.banner-left {
+    flex: 1;
+}
 
-    .nav-buttons {
-        margin-top: 40px;
-    }
+.banner-right {
+    flex: 2;
+    background-image: url("./../assets/house-1.jpg");
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.banner-text-wrapper {
+    position: absolute;
+    top: 10rem;
+}
+
+.banner-title {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.banner-description {
+    width: 60%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: solid 3px var(--blue);
+    color: var(--white);
+}
+
+.banner-search-wrapper {
+    width: 75%;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--white);
+}
+
+.banner-search-wrapper h3 {
+    padding-bottom: 0.5rem;
+}
+
+.search-item {
+    padding-right: 1rem;
+}
+
+.input-search {
+    background-color: var(--gray);
+    padding: 1rem 1rem;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.btn-search-banner {
+    font-family: var(--sans);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--green);
 }
