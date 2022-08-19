@@ -91,6 +91,7 @@ header {
     font-weight: bold;
     padding-bottom: 10px;
     border-bottom: solid 3px var(--dark-blue);
+    transition: ease 0.4s;
 }
 
 .nav-buttons {
@@ -123,11 +124,13 @@ header {
 
 .nav-button.active:hover {
     background-color: var(--blue);
+    transition: ease 0.8s;
 }
 
 .nav-button:hover {
     color: var(--white);
     background-color: var(--blue);
+    transition: ease 0.8s;
 }
 
 #banner {
@@ -349,7 +352,7 @@ header {
     top: 0;
     height: 100%;
     border-radius: 25px;
-    transition: ease 0.2s;
+    transition: ease 0.8s;
 }
 
 #property {
@@ -385,9 +388,16 @@ header {
 .property-list {
     width: 100%;
     height: 350px;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
     background-color: var(--white);
     line-height: 30px;
     text-align: left;
+}
+
+.property-list:hover {
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    transition: ease 0.5s;
 }
 
 .property-detail {
@@ -412,15 +422,103 @@ header {
 .property-flex img {
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
+    width: 100%;
     max-width: 100%;
     height: 65%;
     margin: auto;
     display: block;
+    object-fit: cover;
+    background-size: cover;
 }
 
 .prop-button:hover {
     background-color: var(--dark-blue);
-    transition: ease 0.2s;
+    transition: ease 0.8s;
+}
+
+#contact-form {
+    position: relative;
+    background-image: url("./../assets/contact_bg.png");
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    text-align: center;
+}
+
+.form-heading {
+    color: var(--white);
+    font-style: normal;
+    letter-spacing: 0.05em;
+    padding-top: 2rem;
+}
+
+.form-heading p {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.form-input-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+.form-input-wrapper input {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.form-input-wrapper button {
+    width: 100%;
+    font-size: 1.3rem;
+    font-family: var(--sans);
+}
+
+.card {
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+    width: 100%;
+}
+
+.box-title {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--blue);
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+input {
+    width: 862.13px;
+    height: 75px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 10px;
+}
+
+.btn-submit {
+    width: 862.13px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--blue);
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.25s;
+}
+
+.btn-submit:hover {
+    background-color: var(--dark-blue);
 }
 
 footer {
@@ -441,6 +539,7 @@ footer li {
 footer a:hover {
     color: var(--dark-blue);
     border-bottom: 1px solid var(--dark-blue);
+    transition: ease 0.5s;
 }
 
 .footer-wrapper {
