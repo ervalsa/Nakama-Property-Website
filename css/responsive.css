@@ -51,6 +51,24 @@
     .footer-links {
         margin-bottom: 2rem;
     }
+
+    .why-us-wrapper {
+        padding-top: 2rem;
+        flex-direction: column;
+    }
+
+    .why-image-wrapper {
+        align-self: center;
+    }
+
+    .why-text-wrapper {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .why-text-wrapper h1 {
+        text-align: center;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
