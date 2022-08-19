@@ -85,6 +85,14 @@
     .property-flex {
         flex-direction: column;
     }
+
+    .form-heading p {
+        font-size: 2rem;
+    }
+
+    .box-title {
+        font-size: 1.2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
