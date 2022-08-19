@@ -91,6 +91,7 @@ header {
     font-weight: bold;
     padding-bottom: 10px;
     border-bottom: solid 3px var(--dark-blue);
+    transition: ease 0.4s;
 }
 
 .nav-buttons {
@@ -123,11 +124,13 @@ header {
 
 .nav-button.active:hover {
     background-color: var(--blue);
+    transition: ease 0.8s;
 }
 
 .nav-button:hover {
     color: var(--white);
     background-color: var(--blue);
+    transition: ease 0.8s;
 }
 
 #banner {
@@ -349,7 +352,7 @@ header {
     top: 0;
     height: 100%;
     border-radius: 25px;
-    transition: ease 0.2s;
+    transition: ease 0.8s;
 }
 
 #property {
@@ -420,7 +423,7 @@ header {
 
 .prop-button:hover {
     background-color: var(--dark-blue);
-    transition: ease 0.2s;
+    transition: ease 0.8s;
 }
 
 footer {
@@ -441,6 +444,7 @@ footer li {
 footer a:hover {
     color: var(--dark-blue);
     border-bottom: 1px solid var(--dark-blue);
+    transition: ease 0.5s;
 }
 
 .footer-wrapper {

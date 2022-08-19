@@ -17,7 +17,7 @@
     }
 
     .banner-title {
-        padding-top: 1rem;
+        padding-top: 1.8rem;
         font-size: 1.5rem;
     }
 
@@ -85,10 +85,6 @@
     .property-flex {
         flex-direction: column;
     }
-
-    .banner-title {
-        padding-top: 1rem;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -114,6 +110,10 @@
         height: 310px;
         object-fit: cover;
         background-size: cover;
+    }
+
+    .banner-title {
+        padding-top: 1.8rem;
     }
 }
 
@@ -144,9 +144,17 @@
     }
 }
 
+@media (min-width: 768px) {
+    .banner-title {
+        padding-top: 1.8rem;
+    }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+    .banner-title {
+        padding-top: 1.8rem;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -157,6 +165,8 @@
     }
 
     nav {
+        margin-top: 0;
+        margin-bottom: 0;
         text-align: center;
     }
 
