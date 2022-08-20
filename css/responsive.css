@@ -123,6 +123,19 @@
     .banner-title {
         padding-top: 1.8rem;
     }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-wrap-logo {
+        align-self: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .footer-links {
+        margin-bottom: 2rem;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -156,12 +169,24 @@
     .banner-title {
         padding-top: 1.8rem;
     }
+
+    .footer-wrapper {
+        flex-direction: row;
+    }
+
+    .footer-wrap-logo {
+        align-self: center;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
     .banner-title {
         padding-top: 1.8rem;
+    }
+
+    .footer-wrapper {
+        flex-direction: row;
     }
 }
 
@@ -179,6 +204,10 @@
     }
 
     .type-contents {
+        flex-direction: row;
+    }
+
+    .footer-wrapper {
         flex-direction: row;
     }
 }
